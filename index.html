@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>NEW INDIAN TRANSFER</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="left-side">
+          <div class="brand">
+            <h1><strong>NEW INDIAN TRANSFER</strong></h1>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="nav-link-wrapper">
+            <a href="viewcustomers.php">VIEW CUSTOMERS</a>
+          </div>
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(internshiptransfer.jpg)">
+            </div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="Screenshot (465).png" alt="">
+
+              </div>
+              <div class="subtitle">
+                MAKE YOUR TRANSFERS
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+  <script type="text/javascript">
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+    portfolioItems.forEach(portfolioItem => {
+     portfolioItem.addEventListener('mouseover', () => {
+      portfolioItem.childNodes[1].classList.add('img-darken');
+     });
+     portfolioItem.addEventListener('mouseout', () => {
+      portfolioItem.childNodes[1].classList.remove('img-darken');
+     });
+   });
+
+  </script>
+</html>
